@@ -1,0 +1,78 @@
+body{
+    background-image: url("images/back.jpg");
+    background-attachment: scroll;
+    background-position: center left;
+    height: auto;
+    width: auto;
+
+}
+/*@font-face {
+    font-family: "CustomisedFont";
+    src: url("fonts/vfnjkv");
+}*/
+h1{
+    color: cadetblue;
+    /*background-color: dimgray;*/
+    text-align: center;
+    text-shadow: 5px 5px  5px black;
+    /*text-decoration: underline;*/
+    font-family: sans-serif;
+    font-size: 40pt;
+    lighting-color: light;
+}
+p{
+    color: white;
+    /*background-color: darkcyan;*/
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+p1{
+    position: relative;
+    top: 0px;
+    left: 500px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    font-size: 18pt;
+}
+p5,p6{
+    font-size: 18pt;
+}
+
+a:link{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+a:visited{
+    color: darkcyan;
+}
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+a:active{
+    color: darkcyan;
+}
+
+table{
+    width: 700px;
+    color: darkgrey;
+    opacity: 100;
+    font-size: 14pt;
+    position: relative;
+    left: 250px;
+}
+tr{
+    color: white;
+
+}
+tr.hover{
+    background-color: aqua;
+}
+th1{
+    font-size: 20pt;
+    color: white;
+    position: relative;
+    left: 500px;
+
+}

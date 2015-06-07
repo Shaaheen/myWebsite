@@ -1,0 +1,71 @@
+p1{
+    position: relative;
+    top: 0px;
+    left: 500px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    font-size: 18pt;
+}
+
+body{
+    background-color: black;
+}
+
+div#board{
+    position: relative;
+    width: 800px;
+    height: 663px;
+    margin: auto;
+    background-color: black;
+}
+div#message{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: deepskyblue;
+}
+table{
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+
+}
+td{
+    width: 94px;
+    height: 94px;
+}
+form{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: deepskyblue;
+}
+form input{
+    background-color: aqua;
+    border-color: white;
+    font-size: 1em;
+}
+
+.hit{
+    background: url("ship.png");
+}
+.miss{
+    background: url("miss.png");
+}
+a:link{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+a:visited{
+    color: darkcyan;
+}
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+a:active{
+    color: darkcyan;
+}

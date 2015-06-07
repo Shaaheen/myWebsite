@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Battleship</title>
+    <link href="battleship.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <p1><a href="../index.html">Home</a> </p1>
+    <p1><a href="../PROJECTS/projects.html">Projects </a> </p1>
+    <p1><a href="../about/about.html"> About </a> </p1>
+    <p1><a href="battleship.html">Reload Battleships</a></p1>
+    <script src="battleship.js"> </script>
+    <!--Creating the game board-->
+    <div id="board">
+        <div id="message"></div>
+        <table>
+            <!--Adding each row and cell into board table-->
+            <tr id="A">
+                <td id="A1"></td><td id="A2"></td><td id="A3" class="hit"></td>
+                <td id="A4"></td><td id="A5"></td><td id="A6"></td>
+            </tr>
+            <tr id="B">
+                <td id="B1"></td><td id="B2"></td><td id="B3"></td>
+                <td id="B4"></td><td id="B5"></td><td id="B6"></td>
+            </tr>
+            <tr id="C">
+                <td id="C1"></td><td id="C2"></td><td id="C3"></td>
+                <td id="C4"></td><td id="C5"></td><td id="C6"></td>
+            </tr>
+            <tr id="D">
+                <td id="D1"></td><td id="D2"></td><td id="D3"></td>
+                <td id="D4"></td><td id="D5"></td><td id="D6"></td>
+            </tr>
+            <tr id="E">
+                <td id="E1"></td><td id="E2"></td><td id="E3"></td>
+                <td id="E4"></td><td id="E5"></td><td id="E6"></td>
+            </tr>
+        </table>
+        <form>
+            <input type="text" id="guess" placeholder="A1">
+            <input type="button" id="fire" value="Fire">
+        </form>
+    </div>
+</body>
+</html>
