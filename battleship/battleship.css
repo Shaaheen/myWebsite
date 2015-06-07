@@ -9,7 +9,7 @@ p1{
 }
 
 body{
-    background-color: black;
+    background-color: darkgrey;
 }
 
 div#board{
@@ -17,7 +17,7 @@ div#board{
     width: 800px;
     height: 663px;
     margin: auto;
-    background-color: black;
+    background-color: darkgray;
 }
 div#message{
     position: absolute;
