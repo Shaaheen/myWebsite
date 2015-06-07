@@ -23,7 +23,8 @@ div#message{
     position: absolute;
     top: 0px;
     left: 0px;
-    color: deepskyblue;
+    color: whitesmoke;
+    font-size: 20pt;
 }
 table{
     position: absolute;
