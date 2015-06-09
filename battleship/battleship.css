@@ -1,23 +1,30 @@
+
+
+@font-face {
+    font-family: "Monthoer";
+    src: url("../font/Monthoers.ttf");
+}
 p1{
     position: relative;
     top: 0px;
-    left: 500px;
+    left: 460px;
     padding: 10px;
     margin: 0px;
     width: 100%;
-    font-size: 18pt;
+    font-size: 24pt;
+    font-family: Monthoer;
 }
 
 body{
-    background-color: darkgrey;
+    background-image: url("../images/battleship.jpg");
 }
 
 div#board{
     position: relative;
-    width: 800px;
-    height: 663px;
+    width: 1200px;
+    height: 633px;
     margin: auto;
-    background-color: darkgray;
+    background-image: url("../images/BattleshipGrid.jpg");
 }
 div#message{
     position: absolute;
@@ -28,13 +35,15 @@ div#message{
 }
 table{
     position: absolute;
-    left: 173px;
-    top: 98px;
+    width: 1100px;
+    height: 503px;
+    left: 85px;
+    top: 90px;
     border-spacing: 0px;
 
 }
 td{
-    width: 94px;
+    width: 120px;
     height: 94px;
 }
 form{
@@ -51,7 +60,7 @@ form input{
 }
 
 .hit{
-    background: url("ship.png");
+    background: url("hit1.gif");
 }
 .miss{
     background: url("miss.png");

@@ -20,7 +20,7 @@ var view = {
 };
 
 var model = {
-    boardSize: 6,
+    boardSize: 18,
     numShips: 1,
     shipLength:3,
     shipsSunk:0,
@@ -76,10 +76,13 @@ var controller = {
 
     validate: function(guess){
         var letters = ["A","B","C","D","E"];
-        if (guess.length == 2){
+        if (guess.length == 2 || guess.length == 3){
             if (letters.indexOf(guess.charAt(0)) !=-1){
                 var  col = guess.charAt(1);
-                if ((col > 0) && (col <= 6)){
+                if (guess.length == 3 ){
+                    col = col + guess.charAt(2);
+                }
+                if ((col > 0) && (col <= 18)){
                     return true;
                 }
             }

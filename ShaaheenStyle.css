@@ -1,42 +1,57 @@
 body{
-    background-image: url("images/back.jpg");
+    background-image: url("images/space.jpg");
     background-attachment: scroll;
     background-position: center left;
     height: auto;
     width: auto;
 
 }
-/*@font-face {
-    font-family: "CustomisedFont";
-    src: url("fonts/vfnjkv");
-}*/
+@font-face {
+    font-family: "Redgar";
+    src: url("font/Redgar.ttf");
+}
+
+@font-face {
+    font-family: "Monthoer";
+    src: url("font/Monthoers.ttf");
+}
 h1{
     color: cadetblue;
     /*background-color: dimgray;*/
     text-align: center;
     text-shadow: 5px 5px  5px black;
     /*text-decoration: underline;*/
-    font-family: sans-serif;
-    font-size: 40pt;
+    font-family: Redgar;
+    font-size: 55pt;
     lighting-color: light;
+    position: fixed;
+    top: 10px;
+    left: 480px;
 }
 p{
     color: white;
     /*background-color: darkcyan;*/
     font-size: 16pt;
-    font-family: sans-serif;
+    font-family: Monthoer;
+    position: relative;
+    top: 100px;
+}
+strong{
+    font-size: 24pt;
 }
 p1{
     position: relative;
     top: 0px;
-    left: 500px;
+    left: 460px;
     padding: 10px;
     margin: 0px;
     width: 100%;
-    font-size: 18pt;
+    font-size: 24pt;
+    font-family: Monthoer;
 }
 p5,p6{
     font-size: 18pt;
+    font-family: Monthoer;
 }
 
 a:link{
@@ -58,9 +73,11 @@ table{
     width: 700px;
     color: darkgrey;
     opacity: 100;
-    font-size: 14pt;
+    font-size: 16pt;
     position: relative;
-    left: 250px;
+    left: 200px;
+    top: 130px;
+    font-family: Monthoer;
 }
 tr{
     color: white;
@@ -70,9 +87,12 @@ tr.hover{
     background-color: aqua;
 }
 th1{
-    font-size: 20pt;
+    font-size: 22pt;
+    text-decoration: underline;
     color: white;
     position: relative;
-    left: 500px;
+    left: 22px;
+    top: 130px;
+    font-family: Monthoer;
 
 }
