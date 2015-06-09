@@ -60,10 +60,13 @@ form input{
 }
 
 .hit{
+    position: relative;
+
     background: url("hit1.gif");
 }
 .miss{
-    background: url("miss.png");
+    position: relative;
+    background: url("miss1.gif");
 }
 a:link{
     text-decoration: none;
