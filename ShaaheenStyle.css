@@ -28,12 +28,23 @@ h1{
     top: 10px;
     left: 480px;
 }
+#leftArrow{
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+#rightArrow{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
 p{
     color: white;
     /*background-color: darkcyan;*/
     font-size: 16pt;
     font-family: Monthoer;
     position: relative;
+    left: 120px;
     top: 100px;
 }
 strong{
