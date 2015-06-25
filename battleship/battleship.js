@@ -21,11 +21,13 @@ var view = {
 
 var model = {
     boardSize: 18,
-    numShips: 1,
+    numShips: 4,
+    currShips: 0,
     shipLength:3,
     shipsSunk:0,
+    rows: ["A","B","C","D","E"],
 
-    ships: [{ locations: ["A1","B1","C1"], hits:["","",""]}],
+    ships: [],
 
     fire: function(guess){
         for (var i=0;i <this.numShips;i++){
@@ -55,7 +57,71 @@ var model = {
             }
         }
         return true;
+    },
+
+    generateAllShips : function(){
+        for (var i =0; i<this.numShips;i++){
+            var potentialLocation = this.generateShip();
+            while (this.checkForCollision(potentialLocation)){
+                potentialLocation = this.generateShip();
+            }
+            this.currShips++;
+            this.ships.push({locations: potentialLocation,hits:["","",""]})
+        }
+    },
+
+    generateShip: function(){
+        var location=["","",""];
+
+        var col = Math.floor(Math.random() * 18) + 1;
+        var rowLetter = this.rows[Math.floor(Math.random() * 5)];
+        console.log("Letter :" + String(rowLetter) + "  Num " + String(col));
+        location[0] = (rowLetter + col);
+
+        //Vertical Direction
+        if ((Math.floor(Math.random() * 2))  ===1){
+            if (this.rows.indexOf(rowLetter) === 0){
+                location[1]=( "B" + col);
+                location[2]=( "C" + col);
+            }
+            else if( this.rows.indexOf(rowLetter) === 4){
+                location[1]=("C" + col);
+                location[2]=("D" + col);
+            }
+            else{
+                location[1]=(this.rows[this.rows.indexOf(rowLetter) +1] + col);
+                location[2]=(this.rows[this.rows.indexOf(rowLetter) -1] + col);
+            }
+        }
+        else{
+            if (col ==1){
+                location[1]=( rowLetter+ (col + 1) );
+                location[2]=( rowLetter + (col + 2) );
+            }
+            else if (col ==18){
+                location[1]=( rowLetter+ (col - 1) );
+                location[2]=( rowLetter + (col - 2) );
+            }
+            else{
+                location[1]=( rowLetter+ (col - 1) );
+                location[2]=( rowLetter + (col +1) );
+            }
+        }
+        return location;
+    },
+
+    checkForCollision: function(location){
+        for (var i = 0 ; i < this.currShips; i++){
+            for (var j = 0; j < this.shipLength; j++){
+                if (this.ships[i].locations.indexOf(location[j]) != -1){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
+
+
 };
 
 var controller = {
@@ -90,7 +156,9 @@ var controller = {
         return false;
     }
 };
+
 function init(){
+    model.generateAllShips();
     var fireButton = document.getElementById("fire");
     fireButton.onclick = handleFireButton;
     var guessIn = document.getElementById("guess");

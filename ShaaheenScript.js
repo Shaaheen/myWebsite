@@ -1,19 +1,20 @@
 /**
  * Created by Shaaheen on 6/6/2015.
+ * Program to allow user to dynamically change the website background
  */
+
 var currWallPaper = 0;
-var backgrounds = ["'images/space.jpg'","'images/outer.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'"];
+var backgrounds = ["'images/outer.jpg'","'images/space.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'"];
 var numOfWallpapers = backgrounds.length - 1;
 function init(){
+
+    //give the buttons their events
     var leftArrow = document.getElementById('leftArrow');
     var rightArrow = document.getElementById('rightArrow');
-    if (leftArrow){
-        leftArrow.addEventListener('click',leftArrw,false);
-        rightArrow.addEventListener('click',rightArrw,false);
-    }
-    else{
-        console.log("NULL");
-    }
+    leftArrow.addEventListener('click',leftArrw,false);
+    rightArrow.addEventListener('click',rightArrw,false);
+
+    //For arrows to do the same as buttons
     document.onkeydown = function(e){
         console.log(e.keyCode);
         if (e.keyCode === 37){
@@ -22,16 +23,6 @@ function init(){
         else if (e.keyCode ===39 ){
             rightArrw();
         }
-    }
-}
-
-function handleKeyArrows(e){
-    console.log("dbhjbfkdfnkj");
-    if (e === 37){
-        leftArrw();
-    }
-    else if (e ===38 ){
-        rightArrw();
     }
 }
 function leftArrw(){
