@@ -54,7 +54,7 @@ strong{
 p1{
     position: relative;
     top: 5px;
-    left: 460px;
+    left: 390px;
     padding: 10px;
     margin: 0px;
     width: 100%;
@@ -110,7 +110,7 @@ th1{
 
 }
 .social_links{
-    position: absolute;
+    position: fixed;
     top: 10px;
     margin: auto;
 }
@@ -140,4 +140,7 @@ th1{
 }
 .linkedin-hover {
     background-image: url('images/linkedin-hover.png');
+}
+.github-hover {
+    background-image: url('images/github.png');
 }

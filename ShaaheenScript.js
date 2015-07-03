@@ -10,7 +10,7 @@ var numOfWallpapers = backgrounds.length - 1;
 
 function init(){
     if (localStorage.getItem("currBack", currWallPaper) == NaN){
-        localStorage.setItem("currBack", currWallPaper);
+        localStorage.setItem("currBack", 0);
     }
     console.log("Gets here");
     if (document.getElementById("Intro") == null){
