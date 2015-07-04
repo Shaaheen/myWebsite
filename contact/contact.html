@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title> Projects</title>
+    <title> Contact</title>
     <link href="../ShaaheenStyle.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -10,9 +10,9 @@
 <script src="../ShaaheenScript.js"></script>
 
 <p1><a href="../index.html">Home</a> </p1>
-<p1><a href="projects.html">Projects </a> </p1>
+<p1><a href="../projects/projects.html">Projects </a> </p1>
 <p1><a href="../about/about.html">About</a></p1>
-<p1><a href="contact.html">Contact me</a></p1>
+<p1><a href="contact.html">Contact</a></p1>
 <p1><a href="../battleship/battleship.html">Battleships Game</a></p1>
 
 <div class="social_links">
@@ -27,6 +27,22 @@
 <input type="image"  id='leftArrow' src="../images/leftArrow.gif"/>
 
 
+<form action="contact.php" method="post" id="FormT">
+
+<p>
+    Name : <input type="text" name="name" />
+    <br/>
+    Email : <input type="text" name="email" />
+    <br/>
+    Message : <br/><textarea name="message" rows="5" cols="40"> </textarea>
+    <br/>
+    <input type="submit" value="Submit" id="Submit" />
+</p>
+<p id="ThankYou"> </p>
+<input type="image"  id='rightArrow' src="../images/rightArrow.gif"/>
+
+
+</form>
 
 </body>
 </html>
