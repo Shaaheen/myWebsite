@@ -1,5 +1,5 @@
 <?php
-
+require ("/home/u899385406//public_html/PHPMailer-master/PHPMailerAutoload.php");
 
 /**
  * Created by PhpStorm.
@@ -39,9 +39,9 @@ $message = $_POST["message"];
 //Insert data into database
 $sql = "INSERT INTO Contact (Name,Email,Message) VALUES ('$name','$email','$message')";
 
-/*if (!mysql_query($sql)){
+if (!mysql_query($sql)){
     die("Error" . mysql_error());
-}*/
+}
 
 mysql_close();
 
@@ -60,6 +60,8 @@ $headers = implode("\r\n", $headers);
 
 //send email to me
 if(mail('iam@shaaheen.me',"First","Test Msg",$headers)){
+    mail("sacoorshaheen@gmail.com","Sub","Message Here");
+    mail("SCRSHA001@myuct.ac.za","bdcd","vnkj");
     echo "Sent";
     echo "\r\n";
     echo $headers;
@@ -73,9 +75,41 @@ if (imap_mail('iam@shaaheen.me',$subject,$message)){
 else{
     echo "Imap Failed";
 }
+/*
+$mail = new PHPMailer;
 
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'mx1.freehostingnoads.net';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'iam@shaaheen.me';                 // SMTP username
+$mail->Password = 'Gigabyte1!';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 25;                                    // TCP port to connect to
+
+$mail->From = 'iam@shaaheen.me';
+$mail->FromName = 'Shaaheen Sacoor';
+//$mail->addAddress('sacoorshaheen@gmail.com');     // Add a recipient
+//$mail->addAddress('SCRSHA001@myuct.ac.za');               // Name is optional
+$mail->addAddress('iam@shaaheen.me');               // Name is optional
+//$mail->addReplyTo('GHSOGA@gmail.com', 'Information');
+
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Here is the subject';
+$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
+}
+*/
 //Redirect to Contact page
-//header( 'Location: http://shaaheen.me/contact/contact.html' ) ;
+header( 'Location: http://shaaheen.me/contact/contact.html' ) ;
 
 exit();
 

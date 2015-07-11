@@ -51,9 +51,11 @@ function init(){
     document.onkeydown = function(e){
         console.log(e.keyCode);
         if (e.keyCode === 37){
+            e.preventDefault();
             leftArrw();
         }
         else if (e.keyCode ===39 ){
+            e.preventDefault();
             rightArrw();
         }
     }
@@ -90,7 +92,7 @@ function submitted(){
 
 function setBackgroundBeforeLoad(){
 
-    if (localStorage.getItem("currBack") == NaN){
+    if (localStorage.getItem("currBack") == null){
         localStorage.setItem("currBack", 0);
     }
 
@@ -110,7 +112,7 @@ function setBackgroundBeforeLoad(){
 
     //Set background to current set background
     var currWalll = parseInt(localStorage.getItem("currBack"));
-    console.log(currWalll);
+    console.log("the current wallpaper num is: " + currWalll);
     var newBack = backgrounds[currWalll];
     document.body.style.backgroundImage = "url(" + newBack + ")";
 
