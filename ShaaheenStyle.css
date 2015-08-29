@@ -84,6 +84,42 @@ h1{
     left: 0px;
     top: 200px;
 }
+.choose{
+    position: relative;
+    margin: 1vw;
+    left: 6vw;
+    top: 12vw;
+    border-top: 1px solid #0b0d0f;
+    background: #65c7d4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e8e9c), to(#65c7d4));
+    background: -webkit-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -moz-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -ms-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -o-linear-gradient(top, #3e8e9c, #65c7d4);
+    padding: 4px 8px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Redgar;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.choose:hover {
+    border-top-color: #cfdde6;
+    background: #3185b9;
+    color: #000000;
+}
+.choose:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
 #rightArrow{
     position: fixed;
     right: 0px;
@@ -98,6 +134,16 @@ p{
     left: 120px;
     top: 100px;
 }
+p7{
+    color: white;
+    /*background-color: darkcyan;*/
+    font-size: 4vw;
+    font-family: Monthoer;
+    position: fixed;
+    left: 0px;
+    top: 150px;
+}
+
 strong{
     font-size: 2.5vw;
 }
@@ -105,7 +151,7 @@ strong{
 div2{
     position: relative;
     top: 5px;
-    left: 390px;
+    left: 330px;
 }
 p1{
     padding: 10px;
@@ -178,17 +224,15 @@ a:active{
     transform: scaleX(1);
 }
 
-
-
 table{
     width: auto;
     max-width: 1100px;
     color: darkgrey;
     opacity: 100;
     font-size: 1.7vw;
-    position: relative;
+    position: fixed;
     left: 200px;
-    top: 130px;
+    top: 15vw;
     font-family: Monthoer;
 }
 tr{
@@ -202,9 +246,9 @@ th1{
     font-size: 2.3vw;
     text-decoration: underline;
     color: white;
-    position: relative;
+    position: fixed;
     left: 25vw;
-    top: 8vw;
+    top: 12vw;
     font-family: Monthoer;
 
 }
@@ -242,4 +286,79 @@ th1{
 }
 .github-hover {
     background-image: url('images/github.png');
+}
+
+/*FOR SPACE SHOOTER HTML WEB PLAYER*/
+p.header {
+    font-size: 2vw;
+    position: fixed;
+}
+p.header span {
+    font-weight: bold;
+}
+div.content {
+    margin: auto;
+    padding-top: 20px;
+    width: 600px;
+}
+div.broken,
+div.missing {
+    margin: auto;
+    position: relative;
+    top: 50%;
+    width: 193px;
+}
+div.broken a,
+div.missing a {
+    height: 63px;
+    position: relative;
+    top: -31px;
+}
+div.broken img,
+div.missing img {
+    border-width: 0px;
+}
+div.broken {
+    display: none;
+}
+div#unityPlayer {
+    cursor: default;
+    height: 900px;
+    width: 600px;
+}
+
+.choose1{
+    position: fixed;
+    margin: 1vw;
+    left: 6.9vw;
+    top: 12vw;
+    border-top: 1px solid #0b0d0f;
+    background: #65c7d4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e8e9c), to(#65c7d4));
+    background: -webkit-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -moz-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -ms-linear-gradient(top, #3e8e9c, #65c7d4);
+    background: -o-linear-gradient(top, #3e8e9c, #65c7d4);
+    padding: 4px 8px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Redgar;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.choose1:hover {
+    border-top-color: #cfdde6;
+    background: #3185b9;
+    color: #000000;
+}
+.choose1:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
 }

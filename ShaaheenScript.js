@@ -5,7 +5,7 @@
 
 var currWallPaper = 0;
 var child = false;
-var backgrounds = ["'images/outer.jpg'","'images/space.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'"];
+var backgrounds = ["'images/outer.jpg'","'images/space.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'","'images/space5.jpg'","'images/space6.jpg'","'images/space7.jpg'","'images/space8.jpg'"];
 var numOfWallpapers = backgrounds.length - 1;
 var showThankYou = false;
 
@@ -60,15 +60,19 @@ function init(){
         }
     }
 }
+//If left arrow clicked
 function leftArrw(){
-    if (currWallPaper == 0){
+    if (currWallPaper == 0){ //if end of left images then wrap around
         currWallPaper = numOfWallpapers;
     }
     else{
-        currWallPaper --;
+        currWallPaper --; //go back one in array
     }
-    var newBack = backgrounds[currWallPaper];
+    var newBack = backgrounds[currWallPaper]; //set directory text
+    //Change CSS background image
     document.body.style.backgroundImage = "url(" + newBack + ")";
+    //Stores which background is being used locally
+    //This allows wallpaper to be kept between web pages
     localStorage.setItem("currBack", currWallPaper);
 }
 
@@ -90,12 +94,15 @@ function submitted(){
     localStorage.setItem("showThankYou",true);
 }
 
+//Function to set background to correct set wallpaper
 function setBackgroundBeforeLoad(){
 
+    //if first time on page, set to default 0
     if (localStorage.getItem("currBack") == null){
         localStorage.setItem("currBack", 0);
     }
 
+    //Gets current html page name
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
     console.log("The current page is " + sPage);
@@ -103,17 +110,17 @@ function setBackgroundBeforeLoad(){
     //Set directory depending on where html is
     if (sPage != "index.html"){
         console.log("child");
-        backgrounds = ["'../images/outer.jpg'","'../images/space.jpg'","'../images/space2.jpg'","'../images/space3.jpg'","'../images/space4.jpg'"];
+        backgrounds = ["'../images/outer.jpg'","'../images/space.jpg'","'../images/space2.jpg'","'../images/space3.jpg'","'../images/space4.jpg'","'../images/space5.jpg'","'../images/space6.jpg'","'../images/space7.jpg'","'../images/space8.jpg'"];
     }
     else{
-        backgrounds = ["'images/outer.jpg'","'images/space.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'"];
+        backgrounds = ["'images/outer.jpg'","'images/space.jpg'","'images/space2.jpg'","'images/space3.jpg'","'images/space4.jpg'","'images/space5.jpg'","'images/space6.jpg'","'images/space7.jpg'","'images/space8.jpg'"];
         console.log("parent");
     }
 
     //Set background to current set background
-    var currWalll = parseInt(localStorage.getItem("currBack"));
-    console.log("the current wallpaper num is: " + currWalll);
-    var newBack = backgrounds[currWalll];
+    currWallPaper = parseInt(localStorage.getItem("currBack"));
+    console.log("the current wallpaper num is: " + currWallPaper);
+    var newBack = backgrounds[currWallPaper];
     document.body.style.backgroundImage = "url(" + newBack + ")";
 
 }
