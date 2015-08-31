@@ -6,6 +6,7 @@
     <link href="../ShaaheenStyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <script src="CV.js"></script>
     <script src="../ShaaheenScript.js"></script>
 
     <div2 class="hvr-shutter-out-horizontal"><p1><a href="../index.html" >Home </a></p1></div2>
@@ -24,29 +25,68 @@
 
     <input type="image"  id='leftArrow' src="../images/leftArrow2.gif"/>
 
-    <button class="choose1">Profile</button>
+    <button class="choose1" id="0" onclick="skills(this.id)">Profile</button>
     <br/>
-    <button class="choose">Experience</button>
+    <button class="choose" id="1" onclick="skills(this.id)">Experience</button>
     <br/>
-    <button class="choose">Skills</button>
+    <button class="choose" id="2" onclick="skills(this.id)">Skills</button>
     <br/>
-    <button class="choose">Achievements</button>
+    <button class="choose" id="3" onclick="skills(this.id)">Achievements</button>
     <br/>
-    <button class="choose">Education</button>
+    <button class="choose" id="4" onclick="skills(this.id)">Education</button>
     <br/>
-    <button class="choose">Hobbies</button>
+    <button class="choose" id="5" onclick="skills(this.id)">Hobbies</button>
+    <br/>
 
 
-    <br/>
-    <div4>
-    <table>
-        <thead>
+    <div4 id="div0">
+
+        <p8>
+            <img  id="trainPic" src="../train.jpg" style="width:304px;height:228px;" >
+            Seeking an internship position to gain experience and insight into the Software Development world. A hard-
+            working and self-motivated undergraduate student in Business Science Computer Science, I have tutored and
+            mentored 1st year students and am willing and excited to learn.
+        </p8>
+    </div4>
+
+    <div4 id="div1">
+        <table class="shiftTable">
+            <thead>
+            <tr>
+                <th> </th>
+                <th1> Work Experience</th1>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <th> Feb 2015 - present..............</th>
+                <td class="work"> Tutor (part-time), <a target="_blank" href="https://www.cs.uct.ac.za/"> UCT Computer Science Department</a><td>
+            </tr>
+
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr>
+                <th>June - July 2015..............</th>
+                <td class="work"> Software Engineering Intern, <a target="_blank" href="http://www.derivco.com/"> Derivco </a> </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div4>
+
+    <div4 id="div2">
+        <table>
+            <thead>
             <tr>
                 <th> </th>
                 <th1> Skills</th1>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <tr>
                 <th>IT</th>
                 <td>Proficient Computer Programmer and user </td>
@@ -97,12 +137,111 @@
                 <th>Business</th>
                 <td>Familiar and competent with Economics and Accounting from studies</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
+    </div4>
+
+    <div4 id="div3">
+        <table class="shiftTable">
+            <thead>
+            <tr>
+                <th> </th>
+                <th1> Achievements and Leadership Positions</th1>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <tr>
+                <th> 2015..............</th>
+                <td class="work"> Certificate of Merit from the Computer Science Deparment for academic excellence<td>
+            </tr>
+
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="work">Academic Excellence award at Glendower Residence <td>
+            </tr>
+
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="work">Member of Residence Mentorship Programme <td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="work">Recipient of UCT Commerce Faculty Scholarship <td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="work"> Placed on Dean’s Merit List (for students with overall average above 75%)<td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> 2014..............</th>
+                <td class="work"> Academic Excellence award at Glendower Residence<td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> 2013..............</th>
+                <td class="work"> Member of Interact Society and Team Leader for Video Club, Glenwood High School<td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="work"> Recipient of Physics award and Colours achievement, Glenwood High School <td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+
+            </tbody>
+        </table>
+    </div4>
+
+    <div4 id="div4">
+        <p8>Profile 4</p8>
+    </div4>
+
+    <div4 id="div5">
+        <p8>Profile 5</p8>
     </div4>
 
 
     <input type="image"  id='rightArrow' src="../images/rightArrow2.gif"/>
+
 </body>
 </html>

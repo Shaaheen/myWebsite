@@ -332,6 +332,7 @@ div#unityPlayer {
     margin: 1vw;
     left: 6.9vw;
     top: 12vw;
+
     border-top: 1px solid #0b0d0f;
     background: #65c7d4;
     background: -webkit-gradient(linear, left top, left bottom, from(#3e8e9c), to(#65c7d4));
@@ -361,4 +362,35 @@ div#unityPlayer {
 .choose1:active {
     border-top-color: #1b435e;
     background: #1b435e;
+}
+#skillOne{
+    visibility: visible;
+}
+
+p8{
+    position: fixed;
+    left: 20vw;
+    top: 15vw;
+    align-content: space-around;
+    width: auto;
+    max-width: 1100px;
+    color: whitesmoke;
+    opacity: 100;
+    font-size: 1.7vw;
+    font-family: Monthoer;
+    clear: both;
+    float: right;
+}
+div4{
+    visibility: hidden;
+}
+#trainPic{
+   float: left;
+    margin: 10px 10px 10px 10px;
+}
+.shiftTable{
+    left: 24vw;
+}
+.work{
+    font-size: 2vw;
 }

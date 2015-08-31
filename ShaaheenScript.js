@@ -126,5 +126,6 @@ function setBackgroundBeforeLoad(){
 }
 
 setBackgroundBeforeLoad();
-window.onload = init;
+//window.onload = init;
+window.addEventListener('load',init,false);
 
