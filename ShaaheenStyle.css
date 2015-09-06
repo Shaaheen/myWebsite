@@ -130,9 +130,6 @@ p{
     /*background-color: darkcyan;*/
     font-size: 1.7vw;
     font-family: Monthoer;
-    position: relative;
-    left: 120px;
-    top: 100px;
 }
 p7{
     color: white;
@@ -234,9 +231,11 @@ table{
     left: 200px;
     top: 15vw;
     font-family: Monthoer;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 tr{
     color: white;
+    opacity: 1;
 
 }
 tr.hover{
@@ -368,14 +367,12 @@ div#unityPlayer {
 }
 
 p8{
-    position: fixed;
-    left: 20vw;
-    top: 15vw;
+
     align-content: space-around;
     width: auto;
     max-width: 1100px;
     color: whitesmoke;
-    opacity: 100;
+    opacity: 1;
     font-size: 1.7vw;
     font-family: Monthoer;
     clear: both;
@@ -384,6 +381,23 @@ p8{
 div4{
     visibility: hidden;
 }
+div5{
+    display: inline-block;
+    width: 900px;
+    background-color:rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 20vw;
+    top: 15vw;
+}
+div6{
+    display: inline-table;
+    width: 900px;
+    background-color:rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 20vw;
+    top: 15vw;
+}
+
 #trainPic{
    float: left;
     margin: 10px 10px 10px 10px;
@@ -393,4 +407,25 @@ div4{
 }
 .work{
     font-size: 2vw;
+}
+.achievem{
+    font-size: 1.8vw;
+}
+#format{
+    visibility: hidden;
+}
+
+table1{
+    width: auto;
+    max-width: 1100px;
+    font-size: 1.7vw;
+    font-family: Monthoer;
+    opacity: 1;
+    color: white;
+}
+td{
+    opacity: 1;
+}
+th{
+    opacity: 1;
 }

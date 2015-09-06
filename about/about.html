@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>About</title>
+    <title>CV/Resume</title>
     <link href="../ShaaheenStyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
@@ -11,11 +11,11 @@
 
     <div2 class="hvr-shutter-out-horizontal"><p1><a href="../index.html" >Home </a></p1></div2>
     <div2 class="hvr-shutter-out-horizontal"><p1><a href="../projects/projects.html">Projects </a> </p1></div2>
-    <div2 class="hvr-shutter-out-horizontal"><p1><a href="about.html">About</a></p1></div2>
+    <div2 class="hvr-shutter-out-horizontal"><p1><a href="about.html">CV/Resume</a></p1></div2>
     <div2 class="hvr-shutter-out-horizontal"><p1><a href="../contact/contact.html">Contact</a></p1></div2>
     <div2 class="hvr-shutter-out-horizontal"><p1><a href="../gameProjects/gameProjects.html">Game Projects</a></p1></div2>
 
-    <h1 class="about">About</h1>
+    <h1 class="about">CV / Resume</h1>
     <div class="social_links">
         <!--a href="https://www.facebook.com/shaheen.sacoor" target="_blank"><div class="facebook-hover social-slide"></div></a -->
         <a href="https://github.com/Shaaheen" target="_blank"><div class="github-hover social-slide"></div></a>
@@ -25,7 +25,9 @@
 
     <input type="image"  id='leftArrow' src="../images/leftArrow2.gif"/>
 
-    <button class="choose1" id="0" onclick="skills(this.id)">Profile</button>
+    <button class="choose" id="format" onclick="skills(this.id)"></button>
+    <br/>
+    <button class="choose" id="0" onclick="skills(this.id)">Profile</button>
     <br/>
     <button class="choose" id="1" onclick="skills(this.id)">Experience</button>
     <br/>
@@ -33,7 +35,7 @@
     <br/>
     <button class="choose" id="3" onclick="skills(this.id)">Achievements</button>
     <br/>
-    <button class="choose" id="4" onclick="skills(this.id)">Education</button>
+    <button class="choose" id="4" onclick="skills(this.id)">Education <br/>and References</button>
     <br/>
     <button class="choose" id="5" onclick="skills(this.id)">Hobbies</button>
     <br/>
@@ -41,45 +43,72 @@
 
     <div4 id="div0">
 
-        <p8>
-            <img  id="trainPic" src="../train.jpg" style="width:304px;height:228px;" >
-            Seeking an internship position to gain experience and insight into the Software Development world. A hard-
-            working and self-motivated undergraduate student in Business Science Computer Science, I have tutored and
-            mentored 1st year students and am willing and excited to learn.
-        </p8>
+        <div5>
+            <p8>
+                <img  id="trainPic" src="../train.jpg" style="width:304px;height:228px;" >
+                Hi! I'm Shaaheen. I'm a passionate programmer whose really excited to enter the tech world.
+                <br/> Right now I'm seeking an internship position to gain experience and insight into the Software Development world.
+                I'm a hard-working and self-motivated undergraduate student in Business Science Computer Science, I have tutored and
+                mentored 1st year students and have recently interned at <a target="_blank" href="http://www.derivco.com/"> Derivco </a>, an international games company.
+            </p8>
+
+        </div5>
     </div4>
 
     <div4 id="div1">
-        <table class="shiftTable">
-            <thead>
-            <tr>
-                <th> </th>
-                <th1> Work Experience</th1>
-            </tr>
-            </thead>
-            <tbody>
+        <div6>
+            <table class="shiftTable">
+                <thead>
+                <tr>
+                    <th> </th>
+                    <th1> Work Experience</th1>
+                </tr>
+                </thead>
+                <tbody>
 
-            <tr>
-                <th> Feb 2015 - present..............</th>
-                <td class="work"> Tutor (part-time), <a target="_blank" href="https://www.cs.uct.ac.za/"> UCT Computer Science Department</a><td>
-            </tr>
+                <tr>
+                    <th> Feb 2015 - present.....</th>
+                    <td class="work"> Tutor (part-time), <a target="_blank" href="https://www.cs.uct.ac.za/"> UCT Computer Science Department</a><td>
+                </tr>
 
-            <!--TO leave a space-->
-            <tr> <th></th><td></td></tr>
-            <tr> <th></th><td></td></tr>
-            <tr> <th></th><td></td></tr>
-            <tr>
-                <th>June - July 2015..............</th>
-                <td class="work"> Software Engineering Intern, <a target="_blank" href="http://www.derivco.com/"> Derivco </a> </td>
-            </tr>
 
-            </tbody>
-        </table>
+                <tr>
+                    <th> </th>
+                    <td class="achievem"> -Duties: Assisting 1st year Computer Science students with assignments/course
+                        <br/> work and marking scripts.<td>
+                </tr>
+
+                <tr>
+                    <th> </th>
+                    <td class="achievem">-Excellent experience in conveying programming concepts and adapting to
+                        <br/> different coding styles.<td>
+                </tr>
+
+                <!--TO leave a space-->
+                <tr> <th></th><td></td></tr>
+                <tr> <th></th><td></td></tr>
+                <tr> <th></th><td></td></tr>
+
+
+                <tr>
+                    <th>June - July 2015.....</th>
+                    <td class="work"> Software Engineering Intern, <a target="_blank" href="http://www.derivco.com/"> Derivco </a> </td>
+                </tr>
+
+                <tr>
+                    <th> </th>
+                    <td class="achievem">-Worked as an intern in the Derivco Maths Department which has the job of
+                        <br/> creating the math engine for their games<td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div6>
 
     </div4>
 
     <div4 id="div2">
-        <table>
+        <table style="left: 19vw">
             <thead>
             <tr>
                 <th> </th>
@@ -88,7 +117,7 @@
             </thead>
             <tbody>
             <tr>
-                <th>IT</th>
+                <th>I.T</th>
                 <td>Proficient Computer Programmer and user </td>
             </tr>
             <tr>
@@ -101,7 +130,25 @@
             </tr>
             <tr>
                 <th> </th>
-                <td> Experience with Data structures (AVL, Red- Black trees, Hashtables and Graphs)</td>
+                <td> Experience with Data structures (AVL, Red- Black trees, Hashtables, Graphs) and Concurrent Programming</td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> Web development</th>
+                <td>Competent in HTML, CSS, Javascript and Actionscript</td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> Mobile Development</th>
+                <td> Knowledgable in Android Development from studies</td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -126,16 +173,8 @@
             <tr> <th></th><td></td></tr>
             <tr> <th></th><td></td></tr>
             <tr>
-                <th>Teamwork</th>
-                <td>Effective communicator and reliable team member</td>
-            </tr>
-            <!--TO leave a space-->
-            <tr> <th></th><td></td></tr>
-            <tr> <th></th><td></td></tr>
-            <tr> <th></th><td></td></tr>
-            <tr>
                 <th>Business</th>
-                <td>Familiar and competent with Economics and Accounting from studies</td>
+                <td>Familiar and competent with Economics, Accounting and Finance from studies</td>
             </tr>
             </tbody>
         </table>
@@ -143,7 +182,7 @@
     </div4>
 
     <div4 id="div3">
-        <table class="shiftTable">
+        <table class="shiftTable" style="left: 21vw">
             <thead>
             <tr>
                 <th> </th>
@@ -155,7 +194,16 @@
 
             <tr>
                 <th> 2015..............</th>
-                <td class="work"> Certificate of Merit from the Computer Science Deparment for academic excellence<td>
+                <td class="achievem"> Certificate of Merit from the Computer Science Department for academic excellence<td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <tr>
+                <th> </th>
+                <td class="achievem">Member of the UCT Developers Society <td>
             </tr>
 
             <!--TO leave a space-->
@@ -165,7 +213,7 @@
 
             <tr>
                 <th> </th>
-                <td class="work">Academic Excellence award at Glendower Residence <td>
+                <td class="achievem">Academic Excellence award at Glendower Residence <td>
             </tr>
 
             <!--TO leave a space-->
@@ -175,7 +223,7 @@
 
             <tr>
                 <th> </th>
-                <td class="work">Member of Residence Mentorship Programme <td>
+                <td class="achievem">Member of Residence Mentorship Programme <td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -184,7 +232,7 @@
 
             <tr>
                 <th> </th>
-                <td class="work">Recipient of UCT Commerce Faculty Scholarship <td>
+                <td class="achievem">Recipient of UCT Commerce Faculty Scholarship <td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -193,7 +241,7 @@
 
             <tr>
                 <th> </th>
-                <td class="work"> Placed on Dean’s Merit List (for students with overall average above 75%)<td>
+                <td class="achievem"> Placed on Dean’s Merit List (for students with overall average above 75%)<td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -202,7 +250,7 @@
 
             <tr>
                 <th> 2014..............</th>
-                <td class="work"> Academic Excellence award at Glendower Residence<td>
+                <td class="achievem"> Academic Excellence award at Glendower Residence<td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -211,7 +259,7 @@
 
             <tr>
                 <th> 2013..............</th>
-                <td class="work"> Member of Interact Society and Team Leader for Video Club, Glenwood High School<td>
+                <td class="achievem"> Member of Interact Society and Team Leader for Video Club, Glenwood High School<td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -220,7 +268,7 @@
 
             <tr>
                 <th> </th>
-                <td class="work"> Recipient of Physics award and Colours achievement, Glenwood High School <td>
+                <td class="achievem"> Recipient of Physics award and Colours achievement, Glenwood High School <td>
             </tr>
             <!--TO leave a space-->
             <tr> <th></th><td></td></tr>
@@ -233,11 +281,66 @@
     </div4>
 
     <div4 id="div4">
-        <p8>Profile 4</p8>
+        <div5>
+            <table1 >
+            <thead>
+            <tr>
+                <th> </th>
+                <th> <em><b>Education</b></em><br/></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <th> 2014 - present.......</th>
+                <td > Bachelor of Business Science specialised Computer Science, University of Cape Town<td>
+            </tr>
+
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr>
+                <th>2009 - 2013 ...........</th>
+                <td > National Senior Certificate, Glenwood High School </td>
+            </tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <!--TO leave a space-->
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+            <tr> <th></th><td></td></tr>
+
+            <th> </th>
+            <th><br/><br/><b><em>References</em></b> <br/></th>
+            <tr>
+                <th> <u>Derivco </u><br/></th>
+                <td > Andrew Collier (Mentor) - Mathematician/Statistician in the Maths Department <br/>
+                    Tel: +27 (0)83 381 3655 <br/>
+                    email: andrew@exegetic.biz
+                </td>
+            </tr>
+
+
+            </tbody>
+        </table1>
+
+        </div5>
     </div4>
 
     <div4 id="div5">
-        <p8>Profile 5</p8>
+
+        <div5>
+            <p8>
+                <b><u>Hobbies </u></b><br/>
+                Developing and editing digital art - Photoshop <br/>
+                Producing/Editing videos, was involved in creating inspirational videos for upcoming school sports matches
+                <br/>
+                Travelling and experiencing foreign cultures
+            </p8>
+        </div5>
     </div4>
 
 
