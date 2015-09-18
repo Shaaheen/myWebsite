@@ -148,7 +148,7 @@ strong{
 div2{
     position: relative;
     top: 5px;
-    left: 330px;
+    left: 360px;
 }
 p1{
     padding: 10px;
@@ -165,10 +165,10 @@ p5,p6{
 
 a:link{
     text-decoration: none;
-    color: cornflowerblue;
+    color: #96daff;
 }
 a:visited{
-    color: darkcyan;
+    color: #81cef9;
 }
 a:hover{
     /*color: aqua;
@@ -383,7 +383,7 @@ div4{
 }
 div5{
     display: inline-block;
-    width: 900px;
+    width: 1200px;
     background-color:rgba(0, 0, 0, 0.3);
     position: fixed;
     left: 20vw;
@@ -391,7 +391,7 @@ div5{
 }
 div6{
     display: inline-table;
-    width: 900px;
+    width: 1200px;
     background-color:rgba(0, 0, 0, 0.3);
     position: fixed;
     left: 20vw;
